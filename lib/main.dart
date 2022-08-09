@@ -1,3 +1,7 @@
+// import 'package:eng_app/model/proflie_model.dart';
+import 'package:eng_app/screen/bookclass.dart';
+import 'package:eng_app/screen/history.dart';
+import 'package:eng_app/screen/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,16 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const History(),
     );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
