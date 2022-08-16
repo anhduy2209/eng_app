@@ -1,7 +1,7 @@
 // import 'package:eng_app/model/proflie_model.dart';
-import 'package:eng_app/screen/bookclass.dart';
+// import 'package:eng_app/screen/bookclass.dart';
 import 'package:eng_app/screen/history.dart';
-import 'package:eng_app/screen/profile.dart';
+// import 'package:eng_app/screen/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,20 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-<<<<<<< HEAD
-=======
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-    );
-  }
-}
->>>>>>> f437ff5703fb92318d19f326cd4bc5f6efc0ae02
