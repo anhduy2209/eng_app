@@ -17,7 +17,10 @@ class _ProfileState extends State<Profile> {
             Row(
               children: const [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 15,
+                    vertical: 25,
+                  ),
                   child: CircleAvatar(
                     radius: 30,
                     backgroundImage: NetworkImage(
