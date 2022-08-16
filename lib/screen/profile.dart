@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/rendering.dart';
-// import 'dart:html';
-// import '../menu_icon.dart';
-// import 'dart:html' as html;
-// import 'dart:ui';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -19,7 +14,6 @@ class _ProfileState extends State<Profile> {
       child: Scaffold(
         body: Column(
           children: [
-            // Avatar, Phone number
             Row(
               children: const [
                 Padding(
@@ -42,8 +36,6 @@ class _ProfileState extends State<Profile> {
                 ),
               ],
             ),
-
-            // 0.0 Total class
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -94,13 +86,10 @@ class _ProfileState extends State<Profile> {
                       textAlign: TextAlign.center,
                     ),
                   ],
-                )
+                ),
               ],
             ),
             const SizedBox(height: 35),
-
-            //Invte Friends, Win Giffs
-
             const Padding(
               padding: EdgeInsets.only(right: 180),
               child: Text(
@@ -111,12 +100,9 @@ class _ProfileState extends State<Profile> {
                     fontFamily: 'WorkSans'),
               ),
             ),
-
             const SizedBox(
               height: 20,
             ),
-
-            // Share - Upload
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -124,8 +110,9 @@ class _ProfileState extends State<Profile> {
                   height: 130,
                   width: 160,
                   decoration: BoxDecoration(
-                      color: Colors.orange[100],
-                      borderRadius: BorderRadius.circular(10)),
+                    color: Colors.orange[100],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                   child: Column(
                     children: [
                       Row(
@@ -140,24 +127,21 @@ class _ProfileState extends State<Profile> {
                                 fontSize: 12,
                                 fontFamily: 'WorkSans'),
                           ),
-                          // Text(
-                          //   ' \nPoster For Class',
-                          // ),
                           Image.asset(
                             'assets/img/conversation.png',
                             width: 45,
                             height: 60,
-                          )
+                          ),
                         ],
                       ),
                       ElevatedButton(
                         onPressed: () {},
-                        child: const Text('Go'),
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.orange,
+                            backgroundColor: Colors.orange,
                             fixedSize: const Size(100, 25),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50))),
+                        child: const Text('Go'),
                       ),
                     ],
                   ),
@@ -182,9 +166,6 @@ class _ProfileState extends State<Profile> {
                                 fontSize: 12,
                                 fontFamily: 'WorkSans'),
                           ),
-                          // Text(
-                          //   ' \nPoster For Class',
-                          // ),
                           Image.asset(
                             'assets/img/gold.png',
                             width: 50,
@@ -194,12 +175,14 @@ class _ProfileState extends State<Profile> {
                       ),
                       ElevatedButton(
                         onPressed: () {},
-                        child: const Text('Go'),
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.pinkAccent,
-                            fixedSize: const Size(100, 25),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(50))),
+                          backgroundColor: Colors.pinkAccent,
+                          fixedSize: const Size(100, 25),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        child: const Text('Go'),
                       ),
                     ],
                   ),
@@ -229,14 +212,13 @@ class _ProfileState extends State<Profile> {
                     'assets/img/award.png',
                     width: 90,
                     height: 50,
-                  )
+                  ),
                 ],
               ),
             ),
             const SizedBox(
               height: 15,
             ),
-
             const Padding(
               padding: EdgeInsets.only(right: 250),
               child: Text(
@@ -250,183 +232,183 @@ class _ProfileState extends State<Profile> {
             const SizedBox(
               height: 15,
             ),
-
             Expanded(
-                child: ListView(
-              scrollDirection: Axis.vertical,
-              children: [
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          Image.asset('assets/img/profile.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Setting',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/exchange.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Rewards',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/molecule.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Coupon',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/certification.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'FeedBack',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      )
-                    ],
+              child: ListView(
+                scrollDirection: Axis.vertical,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset('assets/img/profile.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Setting',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/exchange.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Rewards',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/molecule.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Coupon',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/certification.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'FeedBack',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          Image.asset('assets/img/ebook.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Orders',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/graduate.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Student(s)',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/question.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Help',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset('assets/img/score.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Add Class',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset('assets/img/ebook.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Orders',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/graduate.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Student(s)',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/question.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Help',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Image.asset('assets/img/score.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Add Class',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: Row(
-                    children: [
-                      Column(
-                        children: [
-                          Image.asset('assets/img/chat-box.png',
-                              width: 55, height: 55),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          const Text(
-                            'Invite Friends',
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'WorkSans'),
-                          )
-                        ],
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            )),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: Row(
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset('assets/img/chat-box.png',
+                                width: 55, height: 55),
+                            const SizedBox(
+                              height: 15,
+                            ),
+                            const Text(
+                              'Invite Friends',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'WorkSans'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
